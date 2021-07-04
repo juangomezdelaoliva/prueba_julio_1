@@ -7,5 +7,5 @@ VOLUME /tmp
 ADD target/microservicio_deployment.jar app.jar
 
 RUN sh -c 'touch /app.jar'
-EXPOSE 8081
+EXPOSE 8020
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
